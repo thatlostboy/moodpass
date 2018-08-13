@@ -349,6 +349,7 @@ function renderPosters(movielist) {
     var posterURLArray = [];
 
 
+
     // create URL Array
     for (let i = 0; i < movielist.length; i++) {
         // console.log(movielist[i]['poster_path']);
@@ -358,6 +359,9 @@ function renderPosters(movielist) {
     }
 
     console.log(posterURLArray);
+
+    // empty poster pics from DIV list
+    $('#movieList').empty();
 
     // print pictures to DIV movielist
     for (let i = 0; i < posterURLArray.length; i++) {
