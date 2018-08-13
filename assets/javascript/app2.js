@@ -24,7 +24,11 @@ function readURL(input) {
         var reader = new FileReader();
 
         // clear values from movielist and characteristics
+        // if there is a new face
         renderClearValues();
+
+        // enable Analyze button
+        $("#uploadImg").removeAttr("disabled");
 
         reader.onload = function (e) {
             $('#previewImg').attr('src', e.target.result);
