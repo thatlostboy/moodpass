@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+    box-sizing: border-box;   
+}
+
+.fullPage {
+    min-height: 100vh;
+}
+
+.previewImg {
+    max-height: 50vh;
+}
+
+.emphasizeEmotion {
+    font-size: 1.5em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    border: 2px solid #000000;
+}
+
+.analysisPicColummn {
+    padding-right: 2em;
+}
+
+.analysisTextColumn {
+    padding-left: 2em;
+}
+
+.text_specs {
+    line-height: 2 em;
+    font-size: 1.2em;
+}
+
+.card {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.appSection {
+    background-color: rgb(229, 57, 53);
+    margin-bottom: 1rem;
+    background-size: cover;
+}
+
+.splashSection {
+    background-image: url(https://www.xmple.com/wallpaper/pink-linear-red-gradient-1920x1080-c2-db7093-ff0000-a-30-f-14.svg);
+    margin-bottom: 1rem;
+    background-size: cover;
+}
+
+.text_h {
+    padding: 4% 0;
+    font-size: 6em;
+    font-weight: 100;
+    color: white;
+}
+
+input, textarea {
+    border-bottom: 1px solid #fff;
+}
+
+a {
+    color:white;
+}
