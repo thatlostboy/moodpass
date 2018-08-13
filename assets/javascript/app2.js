@@ -23,6 +23,9 @@ function readURL(input) {
     if (input.files && input.files[0]) {
         var reader = new FileReader();
 
+        // clear values from movielist and characteristics
+        renderClearValues();
+
         reader.onload = function (e) {
             $('#previewImg').attr('src', e.target.result);
             $('.previewImg').attr('src', e.target.result);
@@ -339,6 +342,23 @@ function generateMovieList(emotionChar) {
 }
 
 
+function renderClearValues() {
+
+    // empty characteristics of face image
+    $("#imgGender").empty();
+    $("#imgAge").empty();
+    $("#imgGlasses").empty();
+    $("#imgSmile").empty();
+    $("#imgFacialHair").empty();
+    $("#imgEmotion1").empty();
+    $("#imgMakeUp").empty();
+    $("#imgHair").empty();
+
+    // empty poster pics from DIV list
+    $('#movieList').empty();
+}
+
+
 // render poster URL's from movie API json response
 function renderPosters(movielist) {
 
@@ -359,9 +379,6 @@ function renderPosters(movielist) {
     }
 
     console.log(posterURLArray);
-
-    // empty poster pics from DIV list
-    $('#movieList').empty();
 
     // print pictures to DIV movielist
     for (let i = 0; i < posterURLArray.length; i++) {
