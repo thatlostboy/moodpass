@@ -48,7 +48,7 @@ function processImage() {
     //taken straight from their webPage 
 
     // Replace <Subscription Key> with your valid subscription key.
-    var subscriptionKey = '8eddf66d67b34b99979cf8d9b0c7959d';
+    var subscriptionKey = 'db37803100c04d56946c531dbbda12e3';
 
     // NOTE: You must use the same region in your REST call as you used to
     // obtain your subscription keys. For example, if you obtained your
@@ -58,7 +58,7 @@ function processImage() {
     // Free trial subscription keys are generated in the westcentralus region.
     // If you use a free trial subscription key, you shouldn't need to change
     // this region.
-    var uriBase = 'https://westcentralus.api.cognitive.microsoft.com/face/v1.0/detect'
+    var uriBase = 'https://westus2.api.cognitive.microsoft.com/face/v1.0/detect'
 
     // Request parameters.
     var params = {
